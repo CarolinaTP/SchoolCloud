@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolCloud - Inicio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-azul">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./img/logo.png" class="logo-img" alt="SchoolCloud">
+      <span class="ms-2 fw-bold">SchoolCloud</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link activo" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/propuestas.html">Propuestas</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/noticias.html">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/contactos.html">Contactos</a></li>
+        <li class="nav-item ms-lg-3"><a href="./pages/login.html"><img src="img/login.png" class="user-icon"></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<!-- HERO CARRUSEL -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  
+  <div class="carousel-inner">
+
+    <!-- SLIDE 1 -->
+    <div class="carousel-item active">
+      <header class="hero d-flex align-items-center text-center text-white"
+              style="background-image: url('/img/maestros.png'); background-size: cover; background-position: center;">
+        <div class="container">
+          <h1 class="fw-bold">Tu vida académica, más simple.</h1>
+          <p>Organiza tareas, exámenes, clases y tu progreso en un solo lugar.</p>
+          <a href="./pages/registro.html" class="btn btn-light btn-lg mt-3">Regístrate Ahora</a>
+        </div>
+      </header>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="carousel-item">
+      <header class="hero d-flex align-items-center text-center text-white"
+              style="background-image: url('/img/institucion_educativa.png'); background-size: cover; background-position: center;">
+        <div class="container">
+          <h1 class="fw-bold">Toda tu información escolar en un solo lugar.</h1>
+          <p>Accede desde cualquier dispositivo con una sola cuenta.</p>
+          <a href="./pages/registro.html" class="btn btn-light btn-lg mt-3">Crear cuenta</a>
+        </div>
+      </header>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="carousel-item">
+      <header class="hero d-flex align-items-center text-center text-white"
+              style="background-image: url('/img/alumnos.png'); background-size: cover; background-position: center;">
+        <div class="container">
+          <h1 class="fw-bold">Comunicación fluida entre docentes y estudiantes.</h1>
+          <p>Notificaciones claras, resúmenes y calendarios automáticos.</p>
+          <a href="./pages/registro.html" class="btn btn-light btn-lg mt-3">Ver más</a>
+        </div>
+      </header>
+    </div>
+
+  </div>
+
+  <!-- Controles izquierda/derecha -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+
+<!-- PROPUESTAS -->
+<section class="container my-5">
+  <h2 class="text-center mb-4 titulo-seccion">Nuestras Propuestas</h2>
+
+  <div class="row g-4">
+    
+    <div class="col-md-4">
+      <div class="card-propuesta text-center">
+        <img src="img/img1.png" class="img-propuesta">
+        <h3>Alumnos</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="/pages/propuesta-detalle.html" class="btn btn-azul">Leer más..</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-propuesta text-center">
+        <img src="img/img2.png" class="img-propuesta">
+        <h3>Docentes</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="/pages/propuesta-detalle2.html" class="btn btn-azul">Leer más..</a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-propuesta text-center">
+        <img src="img/img3.png" class="img-propuesta">
+        <h3>Instituciones</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="/pages/propuesta-detalle3.html" class="btn btn-azul">Leer más..</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TITULO -->
+<h2 class="text-center titulo-seccion mt-5">Noticias y Actualizaciones</h2>
+
+<!-- CARDS -->
+<section>
+<div class="cards-container">
+
+  <div class="card">
+    <img src="/img/img1.png">
+    <h3>Nueva función disponible</h3>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <a href="#" class="btn btn-azul">Leer más</a>
+  </div>
+
+  <div class="card">
+    <img src="/img/img2.png">
+    <h3>Actualización general</h3>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <a href="#" class="btn btn-azul">Leer más</a>
+  </div>
+
+  <div class="card">
+    <img src="/img/img3.png">
+    <h3>SchoolCloud crece</h3>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <a href="#" class="btn btn-azul">Leer más</a>
+  </div>
+
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer text-center">
+  <p>© 2025 SchoolCloud — Todos los derechos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
